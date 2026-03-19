@@ -1,0 +1,33 @@
+.trend-chart {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  animation: fadeUp 0.5s ease 0.25s both;
+}
+
+.trend-chart__legend {
+  display: flex;
+  gap: 14px;
+  font-size: 12px;
+}
+
+.trend-chart__legend-item--total    { color: var(--accent); }
+.trend-chart__legend-item--negative { color: var(--accent2); }
+
+.trend-chart__body {
+  padding: 20px 20px 12px;
+}
+
+.trend-chart__svg {
+  display: block;
+  width: 100%;
+}
+
+.trend-chart__labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: var(--muted);
+  margin-top: 6px;
+}

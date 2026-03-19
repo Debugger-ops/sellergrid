@@ -1,0 +1,60 @@
+.platform-stats {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  animation: fadeUp 0.5s ease 0.35s both;
+}
+
+.platform-stats__body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.platform-stats__row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.platform-stats__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.platform-stats__name {
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text);
+}
+
+.platform-stats__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.platform-stats__count {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.platform-stats__track {
+  height: 6px;
+  background: var(--surface2);
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.platform-stats__fill {
+  height: 100%;
+  border-radius: 99px;
+  transition: width 1s ease;
+}
