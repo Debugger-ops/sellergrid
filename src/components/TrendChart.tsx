@@ -10,11 +10,7 @@ interface TrendChartProps {
 const W = 520;
 const H = 140;
 
-function toPoints(data: number[]): string {
-  return data
-    .map((y, i) => `${(i / (data.length - 1)) * W},${y}`)
-    .join(' ');
-}
+
 
 function toPolyPath(data: number[]): string {
   const pts = data.map((y, i) => `${(i / (data.length - 1)) * W},${y}`);
